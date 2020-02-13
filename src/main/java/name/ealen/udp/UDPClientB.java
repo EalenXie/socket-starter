@@ -27,7 +27,6 @@ public class UDPClientB {
             DatagramPacket requestPacket = new DatagramPacket(requestDataBytes, requestDataBytes.length,InetAddress.getLocalHost(),20000);
             //发送数据
             datagramSocket.send(requestPacket);
-
             //接收数据
             //创建接收实体
             final byte[] buf = new byte[512];
